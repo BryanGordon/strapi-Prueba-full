@@ -5,5 +5,5 @@ export function query (url: string) {
     headers: {
       Authorization: `Bearer ${API_TOKEN}`
     }
-  }).then(res => res.json)
+  }).then(res => res.json())
 }
