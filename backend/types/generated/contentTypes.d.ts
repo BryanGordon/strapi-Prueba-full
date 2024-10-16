@@ -497,7 +497,10 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
     draftAndPublish: false;
   };
   attributes: {
-    title: Schema.Attribute.String;
+    title: Schema.Attribute.String &
+      Schema.Attribute.SetMinMaxLength<{
+        minLength: 5;
+      }>;
     blocks: Schema.Attribute.DynamicZone<
       ['shared.media', 'shared.quote', 'shared.rich-text', 'shared.slider']
     >;
