@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-/* sacar la carpeta lib de app y colocarla en src */
 import { getHomeInfo } from '@/lib/get-home-info'
 import { BlocksRenderer } from '@strapi/blocks-react-renderer'
 
